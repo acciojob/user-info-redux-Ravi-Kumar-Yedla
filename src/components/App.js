@@ -54,8 +54,11 @@ const App = () => {
         </label>
 
         <h2>Current values in store:</h2>
+        <div className="output">
+
         <p>Name - {name}</p>
         <p>Email - {email}</p>
+        </div>
     </div>
   )
 }
