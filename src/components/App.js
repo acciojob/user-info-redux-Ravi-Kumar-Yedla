@@ -26,10 +26,14 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+
+        <h1>User Information</h1>
+
         <label>
           Name:
           <input 
           type = "text"
+          data-cy="name-input" 
           value = {nameInput} 
           onChange = {handleNameChange}
           placeholder = "Enter name"
@@ -40,7 +44,8 @@ const App = () => {
         <label>
          Email:
           <input 
-          type = "text"
+          type = "email"
+          data-cy="email-input" 
           value = {emailInput} 
           onChange = {handleEmailChange}
           placeholder = "Enter Email"
